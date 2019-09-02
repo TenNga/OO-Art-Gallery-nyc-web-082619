@@ -25,8 +25,8 @@ class Artist
   
   def self.total_experience
     allArtist = Painting.all.map { |painting| painting.artist }
-    allArtist.map { |artist| artist.years_experience }
-    allArtist.sum 
+    allExp = allArtist.map { |artist| artist.years_experience }
+    allExp.sum 
   end
   
   def self.most_prolific
