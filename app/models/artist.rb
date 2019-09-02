@@ -8,7 +8,7 @@ class Artist
   end
   
   def paintings 
-    paintings.all.select { |painting| painting.artist == self } 
+    Paintings.all.select { |painting| painting.artist == self } 
   end
   
   def galleries
@@ -16,7 +16,11 @@ class Artist
   end
   
   def cities 
-    self.galleries.map { |gallery| gallery.cities }
+    self.galleries.map { |gallery| gallery.city }
+  end
+  
+  def self.total_experience
+    
   end
   
   def self.all 
