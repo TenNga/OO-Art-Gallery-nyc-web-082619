@@ -8,7 +8,7 @@ class Artist
   end
   
   def paintings 
-    Paintings.all.select { |painting| painting.artist == self } 
+    Painting.all.select { |painting| painting.artist == self } 
   end
   
   def galleries
