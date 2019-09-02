@@ -12,7 +12,11 @@ class Artist
   end
   
   def galleries
-    self.paintings.map { |painting| painting.galleries }
+    self.paintings.map { |painting| painting.gallery }
+  end
+  
+  def cities 
+    
   end
   
   def self.all 
