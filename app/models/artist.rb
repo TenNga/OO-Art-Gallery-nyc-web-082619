@@ -19,6 +19,10 @@ class Artist
     self.galleries.map { |gallery| gallery.city }
   end
   
+  def create_painting(title,price,gallery)
+    Painting.new()
+  end
+  
   def self.total_experience
     allArtist = Painting.all.map { |painting| painting.artist }
     allArtist.map { |artist| artist.years_experience }
