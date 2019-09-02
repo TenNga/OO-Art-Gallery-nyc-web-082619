@@ -20,13 +20,11 @@ class Gallery
   end
   
   def most_expensive_painting
-    self.paintings.
+    self.paintings.max_by { |painting| painting.price } 
   end
   
   def self.all 
     Painting.all.map { |painting| painting.gallery }
   end
-  
-  
 
 end
