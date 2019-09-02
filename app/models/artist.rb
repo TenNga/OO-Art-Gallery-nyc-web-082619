@@ -25,7 +25,10 @@ class Artist
     allArtist.sum 
   end
   
-  
+  def self.most_prolific
+    allArtist = Painting.all.map { |painting| painting.artist }
+    allArtist.
+  end
   
   def self.all 
     Painting.all.map { |painting| painting.artist } 
