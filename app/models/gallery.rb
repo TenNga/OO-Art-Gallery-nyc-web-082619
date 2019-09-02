@@ -24,7 +24,8 @@ class Gallery
   end
   
   def self.all 
-    Painting.all.map { |painting| painting.gallery }
+    allGallery = Painting.all.map { |painting| painting.gallery }
+    allGallery.uniq 
   end
 
 end
