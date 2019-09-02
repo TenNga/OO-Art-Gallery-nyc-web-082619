@@ -27,7 +27,7 @@ class Artist
   
   def self.most_prolific
     allArtist = Painting.all.map { |painting| painting.artist }
-    allArtist.
+    allArtist.max_by { |artist| artist.years_experience }
   end
   
   def self.all 
