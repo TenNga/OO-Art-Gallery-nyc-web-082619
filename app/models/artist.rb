@@ -20,7 +20,7 @@ class Artist
   end
   
   def create_painting(title,price,gallery)
-    Painting.new()
+    Painting.new(title,price,gallery,self)
   end
   
   def self.total_experience
