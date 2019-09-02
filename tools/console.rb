@@ -1,5 +1,6 @@
 require_relative '../config/environment.rb'
 
+kevin = Artist.new()
 
 
 
