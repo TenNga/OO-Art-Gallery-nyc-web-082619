@@ -22,8 +22,10 @@ class Artist
   def self.total_experience
     allArtist = Painting.all.map { |painting| painting.artist }
     allArtist.map { |artist| artist.years_experience }
-    allArtist.
+    allArtist.sum 
   end
+  
+  
   
   def self.all 
     Painting.all.map { |painting| painting.artist } 
