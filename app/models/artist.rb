@@ -16,7 +16,7 @@ class Artist
   end
   
   def cities 
-    
+    self.galleries.map { |gallery| gallery.cities }
   end
   
   def self.all 
