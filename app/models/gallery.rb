@@ -6,5 +6,19 @@ class Gallery
     @name = name
     @city = city
   end
+  
+  def paintings
+    allPaintings = Painting.all.select { |painting| painting.gallery == self } 
+  end
+  
+  def artists
+    self.paintings.map { |painting| painting.artist }
+  end
+  
+  def self.all 
+    Painting.all.map { |painting| painting.gallery }
+  end
+  
+  
 
 end
