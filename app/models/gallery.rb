@@ -19,6 +19,10 @@ class Gallery
     self.artists.map { |artist| artist.name }
   end
   
+  def most_expensive_painting
+    self.paintings.
+  end
+  
   def self.all 
     Painting.all.map { |painting| painting.gallery }
   end
